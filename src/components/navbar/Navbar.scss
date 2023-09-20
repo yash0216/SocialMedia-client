@@ -1,0 +1,29 @@
+.Navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 60px;
+  background-color: aliceblue;
+  border-bottom: 1px solid var(--border-color);
+  .container {
+    height: 100%;
+    max-width: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: auto;
+  }
+
+  .right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    .logout {
+      font-size: 1.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
