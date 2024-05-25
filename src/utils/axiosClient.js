@@ -9,7 +9,7 @@ import {
   setItem,
 } from "./localStorageManager";
 
-let baseURL = "https://socialmedia-server-5bga.onrender.com";
+let baseURL = process.env.REACT_APP_SERVER_BASE_URL;
 
 export const axiosClient = axios.create({
   baseURL,
