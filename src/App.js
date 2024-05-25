@@ -5,6 +5,7 @@ import Home from "./pages/home/Home";
 import RequireUser from "./components/RequireUser.js";
 import Profile from "./components/profile/Profile";
 import Feed from "./components/feed/Feed.js";
+import New from "./components/new/New.js";
 import UpdateProfile from "./components/updateProfile/UpdateProfile.js";
 import { useSelector } from "react-redux";
 import { useEffect, useRef } from "react";
@@ -55,6 +56,7 @@ function App() {
             <Route path="/" element={<Feed />} />
             <Route path="/profile/:userId" element={<Profile />} />
             <Route path="/updateProfile" element={<UpdateProfile />} />
+            <Route path="/New" element={<New />} />
           </Route>
         </Route>
         <Route element={<OnlyIfNotLoggedIn />}>

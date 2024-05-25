@@ -9,7 +9,7 @@ import {
   setItem,
 } from "./localStorageManager";
 
-let baseURL = "https://joysie-backend.onrender.com";
+let baseURL = "http://localhost:4000";
 
 export const axiosClient = axios.create({
   baseURL,
